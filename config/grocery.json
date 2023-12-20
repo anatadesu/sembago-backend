@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "category": "Fruits",
+    "price": 1.99,
+    "location": "Produce Section",
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "name": "Milk",
+    "category": "Dairy",
+    "price": 2.49,
+    "location": "Dairy Aisle",
+    "rating": 4.0
+  },
+  {
+    "id": 3,
+    "name": "Bread",
+    "category": "Bakery",
+    "price": 1.79,
+    "location": "Bakery Section",
+    "rating": 4.2
+  },
+  {
+    "id": 4,
+    "name": "Chicken Breast",
+    "category": "Meat",
+    "price": 5.99,
+    "location": "Meat Department",
+    "rating": 4.8
+  },
+  {
+    "id": 5,
+    "name": "Spinach",
+    "category": "Vegetables",
+    "price": 2.29,
+    "location": "Produce Section",
+    "rating": 4.3
+  },
+  {
+    "id": 6,
+    "name": "Banana",
+    "category": "Fruits",
+    "price": 0.99,
+    "location": "Produce Section",
+    "rating": 4.0
+  },
+  {
+    "id": 7,
+    "name": "Eggs",
+    "category": "Dairy",
+    "price": 1.89,
+    "location": "Dairy Aisle",
+    "rating": 4.4
+  },
+  {
+    "id": 8,
+    "name": "Baguette",
+    "category": "Bakery",
+    "price": 2.49,
+    "location": "Bakery Section",
+    "rating": 4.6
+  },
+  {
+    "id": 9,
+    "name": "Salmon Fillet",
+    "category": "Seafood",
+    "price": 8.99,
+    "location": "Seafood Department",
+    "rating": 4.7
+  },
+  {
+    "id": 10,
+    "name": "Carrot",
+    "category": "Vegetables",
+    "price": 1.19,
+    "location": "Produce Section",
+    "rating": 4.1
+  },
+  {
+    "id": 11,
+    "name": "Orange Juice",
+    "category": "Beverages",
+    "price": 3.49,
+    "location": "Juice Aisle",
+    "rating": 4.5
+  },
+  {
+    "id": 12,
+    "name": "Cheese",
+    "category": "Dairy",
+    "price": 4.99,
+    "location": "Dairy Aisle",
+    "rating": 4.3
+  },
+  {
+    "id": 13,
+    "name": "Bagels",
+    "category": "Bakery",
+    "price": 2.99,
+    "location": "Bakery Section",
+    "rating": 4.2
+  },
+  {
+    "id": 14,
+    "name": "Ground Beef",
+    "category": "Meat",
+    "price": 6.49,
+    "location": "Meat Department",
+    "rating": 4.9
+  },
+  {
+    "id": 15,
+    "name": "Cucumber",
+    "category": "Vegetables",
+    "price": 1.49,
+    "location": "Produce Section",
+    "rating": 4.0
+  },
+  {
+    "id": 16,
+    "name": "Grapes",
+    "category": "Fruits",
+    "price": 3.29,
+    "location": "Produce Section",
+    "rating": 4.4
+  },
+  {
+    "id": 17,
+    "name": "Yogurt",
+    "category": "Dairy",
+    "price": 2.99,
+    "location": "Dairy Aisle",
+    "rating": 4.6
+  },
+  {
+    "id": 18,
+    "name": "Croissant",
+    "category": "Bakery",
+    "price": 2.19,
+    "location": "Bakery Section",
+    "rating": 4.1
+  },
+  {
+    "id": 19,
+    "name": "Shrimp",
+    "category": "Seafood",
+    "price": 9.99,
+    "location": "Seafood Department",
+    "rating": 4.7
+  },
+  {
+    "id": 20,
+    "name": "Broccoli",
+    "category": "Vegetables",
+    "price": 1.99,
+    "location": "Produce Section",
+    "rating": 4.3
+  },
+  {
+    "id": 21,
+    "name": "Pineapple",
+    "category": "Fruits",
+    "price": 2.99,
+    "location": "Produce Section",
+    "rating": 4.5
+  },
+  {
+    "id": 22,
+    "name": "Butter",
+    "category": "Dairy",
+    "price": 2.79,
+    "location": "Dairy Aisle",
+    "rating": 4.2
+  },
+  {
+    "id": 23,
+    "name": "Cinnamon Roll",
+    "category": "Bakery",
+    "price": 3.49,
+    "location": "Bakery Section",
+    "rating": 4.8
+  },
+  {
+    "id": 24,
+    "name": "Pork Chop",
+    "category": "Meat",
+    "price": 7.49,
+    "location": "Meat Department",
+    "rating": 4.0
+  },
+  {
+    "id": 25,
+    "name": "Tomato",
+    "category": "Vegetables",
+    "price": 1.69,
+    "location": "Produce Section",
+    "rating": 4.6
+  },
+  {
+    "id": 26,
+    "name": "Strawberries",
+    "category": "Fruits",
+    "price": 4.29,
+    "location": "Produce Section",
+    "rating": 4.1
+  },
+  {
+    "id": 27,
+    "name": "Sour Cream",
+    "category": "Dairy",
+    "price": 1.99,
+    "location": "Dairy Aisle",
+    "rating": 4.3
+  },
+  {
+    "id": 28,
+    "name": "Chocolate Croissant",
+    "category": "Bakery",
+    "price": 2.99,
+    "location": "Bakery Section",
+    "rating": 4.5
+  },
+  {
+    "id": 29,
+    "name": "Salmon",
+    "category": "Seafood",
+    "price": 10.99,
+    "location": "Seafood Department",
+    "rating": 4.7
+  },
+  {
+    "id": 30,
+    "name": "Green Beans",
+    "category": "Vegetables",
+    "price": 1.79,
+    "location": "Produce Section",
+    "rating": 4.2
+  }
+]

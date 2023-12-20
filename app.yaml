@@ -1,0 +1,6 @@
+runtime: nodejs14
+
+env: standard
+
+runtime_config:
+  memory_limit: 128MB
