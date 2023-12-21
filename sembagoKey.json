@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "sembago",
+  "private_key_id": "0fe52a1b4a44aba2035784bede44fa018a07bd6d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDon6+GPEGuyQs\nQAwoRKdfEXXx5u3ZWdVRGWhcXpaVqk3lluBtaurAPp7+alOsmqsC+qiZU+8xXvCA\nCUjR3rPizefiWlS0JV0qncAZk2PomtSymsvYpxdfl8tpqG6hN+460KarpoZWn/6T\nY06OSpqNM4vPoStkBOR8/eHPpxD8xFWJ3RvuB6tYNl8JdRn/dUjJ/6Ndip2wyJ8x\nY1DfBhONFMDsG+9TqoJV2Ljxh4ktF0FjJuI8EzMj7Y6G6ERwNDstWl4FdVLbCFfw\np2+khLI9OoSF/9ck9RPgroQBWJ5SKnpPvou4z3uMRuGnhRLmMgN91RDuNu6NRmoB\nB3FzE+yDAgMBAAECggEAAr7mGBVR7kenUB1Gzmd53eJPc6l+qLB54PbohkHBmH1Y\nzu8ZXHYsSa4KhATKaQxZ3n0I64kuozrzSMJYmX5Bq6sHvrjvCJqgCx55rFVrb1lO\njbWRRNiOtTj0Xuanq6Jh7Ctl6D5teXIqm+qNFxj1WfDH3PS+Uihx0htFSKlnzW30\n6TmxhccTb7mVf7wW6u5mndZxKd0buvEYKsSChEc8bfmKWXnu6YIvHx9L4jKGRFRd\n3j2fCUwZqObML++6k5Vubuy7M2EkGO1X/DohQqgGjd1lk8wFhnxdHYKSZmTd4aWI\nPM0rYCRjwj6xRF1LYEfvx71TbUv2MQ8zsoZ/RahIwQKBgQDgY8z5nDKe6rBEOhQA\nU6iMB9Lwu1mN4OU9wzC6E2Dpere5b16iFbVfMrxwmAzYNkLw33AiRf2ueB2mMFTW\n4txt34OFgfWtFM/Xkph0DwmQXo//TS8kKBQbUT8Y3xaopeeMe6nbIVN3J2FdqZpK\nHbeUkzTgV2LlT/ibZ3Abh/vfIQKBgQDfMbITcACvd98pMa+EQyxwUhspyAX6s4xY\n10U2jiY4Q1s2oVfwt2Pmmbnd1nF9IC22REmSHdiT7DMh25TJwapKrBa2o5PVEemm\nSG3BMiboyeq+x9EqhlhCWcAoH590Y49jaOzXMRJk2cb6/HsG6UnuwZJWtoEgnNNb\nj+g3bU4LIwKBgQC4lmDQFYYu5LEL7xr1CdzlFKqaDgSlihQKsr8q0zYt2x24Fb2r\naGBDZ+FMXkhytHBs5eHA0ALXu0fopmmkPAtI902iTj5jm3M+ywFOt/AOKzwZsMzO\n2Ylwz20wcJSbN587GZ+o+8lFg8e83QBnZ/rU5iPhSQG50geZD4ZRn5O7AQKBgFl2\nVPeflFbBCK09Yin0tvJKpuKnb2Ye4+mUWATXE5DHxt7t6w7so1mCUtMNqq3J4SjG\n1GqCFhasvY4bstbwDq8hrXUFujLUnD/vljazQI9cqABSnY+bC/OEgBZVHpgLdCUX\noJ9c5w+Pj0d5PmL1zZGq+1pQiw+kbL+tvhnBcV/bAoGAVnf71DZzdq5DVsEI6Tea\nL1LOQzWG2U7klHhZna1TJT9Of/GMdgmcZTGEhEd7aT37J+NuH9RLjLJfsDYMdKRQ\ncjzz9gvEeEZ/8KuEoakeEsjHcFsonaKL+6BNYAaxdyETdJyeM1quX2AkSP/j5fXF\nD6bYtjHaaYlFNyDNFhCdv5k=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sembago@sembago.iam.gserviceaccount.com",
+  "client_id": "106322316874735417168",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sembago%40sembago.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
