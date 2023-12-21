@@ -93,11 +93,20 @@ router.post('/nearProduct', async (req, res) => {
     for (const resultItem of resultData) {
       const goalName = resultItem.goal;
 
-      const matchingProduct = data.find(product => product.name === goalName);
+      // Fetch matching products from Firestore based on the goal name
+      const matchingProductSnapshot = await db.collection('product').where('name', '==', goalName).get();
 
-      if (matchingProduct) {
+      if (!matchingProductSnapshot.empty) {
+        const matchingProductData = matchingProductSnapshot.docs[0].data();
+
         matchingProducts.push({
-          ...matchingProduct,
+          id: matchingProductSnapshot.docs[0].id,
+          name: matchingProductData.name,
+          category: matchingProductData.category,
+          alamat: matchingProductData.alamat,
+          imageLink: matchingProductData.imageLink,
+          price: matchingProductData.price,
+          description: matchingProductData.description,
           dist_km: resultItem.dist_km,
         });
       }
@@ -105,49 +114,6 @@ router.post('/nearProduct', async (req, res) => {
 
     // Return the result and matching products
     res.json({ result: resultData, matchingProducts });
-  } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
-  }
-});
-
-// Route to get the last saved A* result and matching products
-router.get('/resultAstar', async (req, res) => {
-  try {
-    // Fetch the last saved A* result from Firestore
-    const resultQuery = await db.collection('resultAstar').orderBy('timestamp', 'desc').limit(1).get();
-
-    // Check if any result was found
-    if (resultQuery.empty) {
-      return res.status(404).json({ error: 'No A* result found.' });
-    }
-
-    const lastResult = resultQuery.docs[0].data().result;
-
-    // Fetch matching products based on goal names in the result
-    const matchingProducts = [];
-
-    for (const resultItem of lastResult) {
-      const goalName = resultItem.goal;
-
-      const matchingProduct = await db.collection('product').where('name', '==', goalName).get();
-
-      matchingProduct.forEach(doc => {
-        matchingProducts.push({
-          id: doc.id,
-          name: doc.data().name,
-          category: doc.data().category,
-          alamat: doc.data().alamat,
-          imageLink: doc.data().imageLink,
-          price: doc.data().price,
-          description: doc.data().description,
-          dist_km: resultItem.dist_km,
-        });
-      });
-    }
-
-    // Return the last A* result and matching products
-    res.json({ result: matchingProducts });
   } catch (error) {
     console.error('Error:', error);
     res.status(500).json({ error: 'Internal Server Error' });

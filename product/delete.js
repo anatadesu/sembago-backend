@@ -1,5 +1,4 @@
 const express = require('express');
-const bcrypt = require('bcrypt');
 const { Firestore, Timestamp } = require('@google-cloud/firestore');
 const serviceAccount = require('../sembagoKey.json');
 const db = new Firestore({
@@ -9,26 +8,61 @@ const db = new Firestore({
 
 const router = express.Router();
 
-router.delete('/deleteProduct/:productId', async (req, res) => {
+// Route to delete a document by ID
+router.delete('/deleteDocument/:documentId', async (req, res) => {
   try {
-    const { productId } = req.params;
+    const documentId = req.params.documentId;
 
-    const productCollection = db.collection('product');
-
-    // Check if product with the given ID exists
-    const product = await productCollection.doc(productId).get();
-    if (!product.exists) {
-      res.status(404).json({ message: 'Product not found' });
-      return;
+    if (!documentId) {
+      return res.status(400).json({ error: 'Invalid document ID provided.' });
     }
 
-    // Delete the product document
-    await productCollection.doc(productId).delete();
+    // Reference to the document
+    const documentRef = db.collection('product').doc(documentId);
 
-    res.status(204).json({ message: 'Product deleted successfully' });
-  } catch (err) {
-    console.error('Error:', err.message);
-    res.status(500).json({ message: err.message });
+    // Check if the document exists before attempting to delete
+    const documentSnapshot = await documentRef.get();
+
+    if (!documentSnapshot.exists) {
+      return res.status(404).json({ error: 'Document not found.' });
+    }
+
+    // Delete the document
+    await documentRef.delete();
+
+    res.status(200).json({ message: 'Document deleted successfully.' });
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+router.delete('/product/:category/products', async (req, res) => {
+  try {
+    const category = req.params.category;
+
+    if (!category) {
+      return res.status(400).json({ error: 'Invalid category provided.' });
+    }
+
+    // Reference to the collection
+    const collectionRef = db.collection('product').doc(category).collection('products');
+
+    // Get all documents in the collection
+    const querySnapshot = await collectionRef.get();
+
+    if (querySnapshot.empty) {
+      return res.status(404).json({ error: 'No documents found in the collection.' });
+    }
+
+    // Delete each document
+    const deletePromises = querySnapshot.docs.map(doc => doc.ref.delete());
+    await Promise.all(deletePromises);
+
+    res.status(200).json({ message: 'All documents deleted successfully.' });
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 

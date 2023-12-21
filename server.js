@@ -19,6 +19,7 @@ const addCart = require('./cart/create');
 const payment = require('./checkout/payment');
 const shipping = require('./shipping/shipping');
 const sst = require('./model_rekomendasi/star');
+const deleteDoc = require('./product/delete');
 
 app.use('/api', user);
 app.use('/api', userDelete);
@@ -33,6 +34,7 @@ app.use('/api', addCart);
 app.use('/api', payment);
 app.use('/api', shipping);
 app.use('/api', sst);
+app.use('/api', deleteDoc);
 
 app.get('/', function (req, res) {
   res.status(200).send('Hello World!');
